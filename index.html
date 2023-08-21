@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.google.com/specimen/Rubik+Pixels?query=pixel">
+        <title>To Do Today</title>
+        <link rel="shortcut icon" href="icon.png" type="x-icon">
+        <link rel="stylesheet" href="sty.css">
+    </head>
+
+        <body style="background-color: #112d32;">
+
+            <header>
+                <a href="Checkthenumber.html" target="_blank" class="games">Wanna Have some fun ?</a>
+                <p id="music" class="music_handle">Relax</p>
+            </header>
+
+            <section>
+                <div class="">
+                    <div class="to_do">
+                        <p class="main_logo">To Do Today</p>
+                        <input class="text_box" type="String" id="input" placeholder="What do you want to do today">
+                        <button onclick="addtask()" class="addbutton">Add</button>
+                    </div>
+                    
+                    <div class="container">
+                        <ul id="list">
+                        </ul>
+                    </div>
+                </div>
+                
+                <audio controls id="relaxing" autoplay loop muted style="display: none;">
+                    <source  src="relaxing3.mp3" type="audio/mp3" >
+                    Your browser does not support the audio element.
+                </audio>
+
+                <audio controls id="task" style="display: none;">
+                    <source  src="Task completed.mp3" type="audio/mp3" >
+                    Your browser does not support the audio element.
+                </audio>
+
+            </section>
+
+            <script src="respon.js"></script>
+
+        </body>
+</html>
